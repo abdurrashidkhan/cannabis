@@ -15,7 +15,7 @@ const FlitterInfo = () => {
     return <Loading></Loading>
   }
   return (
-    <div className="bg-[#fff] px-4 rounded shadow-2xl py-4 w-[30%]">
+    <div className="bg-[#fff] px-4 rounded shadow-2xl py-4 w-full md:w-[30%] mb-6 md:mb-0">
       <div className="">
         <div className="">
           <div className="flex items-center gap-2">

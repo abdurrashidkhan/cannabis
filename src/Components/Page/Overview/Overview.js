@@ -8,7 +8,7 @@ const Overview = () => {
     <div>
       <div className="">
         {/* 2-coll */}
-        <div className="flex gap-4 pt-8 ">
+        <div className="block md:flex gap-4 pt-8 ">
           <FlitterInfo />
           <ProductsInfo />
         </div>
