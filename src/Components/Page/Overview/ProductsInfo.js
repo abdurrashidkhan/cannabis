@@ -33,9 +33,9 @@ const ProductsInfo = () => {
               </td>
               <td>
                 <div className="">
-                  <p className='text-xs flex'>THC <span>10%</span></p>
+                  <p className='text-xs flex justify-between'>THC <span>10%</span></p>
                   <input type="range" min="0" max="500" value='60' className="range range-primary bg-[#0000002f] range-xs" />
-                  <p className='text-xs flex'>CBD <span>50%</span></p>
+                  <p className='text-xs flex justify-between'>CBD <span>50%</span></p>
                   <input type="range" min="0" max="500" value='300' className="range range-primary bg-[#0000002f] range-xs" />
                 </div>
               </td>
@@ -75,9 +75,9 @@ const ProductsInfo = () => {
               </td>
               <td>
                 <div className="">
-                  <p className='text-xs flex'>THC <span>10%</span></p>
+                  <p className='text-xs flex justify-between'>THC <span>10%</span></p>
                   <input type="range" min="0" max="500" value='60' className="range range-primary bg-[#0000002f] range-xs" />
-                  <p className='text-xs flex'>CBD <span>50%</span></p>
+                  <p className='text-xs flex justify-between'>CBD <span>50%</span></p>
                   <input type="range" min="0" max="500" value='300' className="range range-primary bg-[#0000002f] range-xs" />
                 </div>
               </td>
@@ -117,9 +117,9 @@ const ProductsInfo = () => {
               </td>
               <td>
                 <div className="">
-                  <p className='text-xs flex'>THC <span>10%</span></p>
+                  <p className='text-xs flex justify-between'>THC <span>10%</span></p>
                   <input type="range" min="0" max="500" value='60' className="range range-primary bg-[#0000002f] range-xs" />
-                  <p className='text-xs flex'>CBD <span>50%</span></p>
+                  <p className='text-xs flex justify-between'>CBD <span>50%</span></p>
                   <input type="range" min="0" max="500" value='300' className="range range-primary bg-[#0000002f] range-xs" />
                 </div>
               </td>
@@ -159,9 +159,9 @@ const ProductsInfo = () => {
               </td>
               <td>
                 <div className="">
-                  <p className='text-xs flex'>THC <span>10%</span></p>
+                  <p className='text-xs flex justify-between'>THC <span>10%</span></p>
                   <input type="range" min="0" max="500" value='60' className="range range-primary bg-[#0000002f] range-xs" />
-                  <p className='text-xs flex'>CBD <span>50%</span></p>
+                  <p className='text-xs flex justify-between'>CBD <span>50%</span></p>
                   <input type="range" min="0" max="500" value='300' className="range range-primary bg-[#0000002f] range-xs" />
                 </div>
               </td>
@@ -201,9 +201,9 @@ const ProductsInfo = () => {
               </td>
               <td>
                 <div className="">
-                  <p className='text-xs flex'>THC <span>10%</span></p>
+                  <p className='text-xs flex justify-between'>THC <span>10%</span></p>
                   <input type="range" min="0" max="500" value='60' className="range range-primary bg-[#0000002f] range-xs" />
-                  <p className='text-xs flex'>CBD <span>50%</span></p>
+                  <p className='text-xs flex justify-between'>CBD <span>50%</span></p>
                   <input type="range" min="0" max="500" value='300' className="range range-primary bg-[#0000002f] range-xs" />
                 </div>
               </td>
@@ -243,9 +243,9 @@ const ProductsInfo = () => {
               </td>
               <td>
                 <div className="">
-                  <p className='text-xs flex'>THC <span>10%</span></p>
+                  <p className='text-xs flex justify-between'>THC <span>10%</span></p>
                   <input type="range" min="0" max="500" value='60' className="range range-primary bg-[#0000002f] range-xs" />
-                  <p className='text-xs flex'>CBD <span>50%</span></p>
+                  <p className='text-xs flex justify-between'>CBD <span>50%</span></p>
                   <input type="range" min="0" max="500" value='300' className="range range-primary bg-[#0000002f] range-xs" />
                 </div>
               </td>
