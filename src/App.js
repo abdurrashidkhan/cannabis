@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Route, Routes } from 'react-router';
-import Home from './Page/Home/Home';
+import Home from './Components/Page/Home/Home';
 
 function App() {
   return (
