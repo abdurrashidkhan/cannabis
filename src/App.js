@@ -11,7 +11,7 @@ import Navbar from './Components/Page/Navbar/Navbar';
 function App() {
   return (
     <>
-      <Navbar></Navbar>
+      
       <Routes>
         <Route path="/" element={<IndexMin />} >
           <Route index element={
