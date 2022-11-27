@@ -7,8 +7,10 @@ import { signOut } from 'firebase/auth';
 import CustomLink from './CustomLink/CustomLink';
 import Navbar from './Navbar/Navbar';
 import { HiOutlineMenuAlt2 } from 'react-icons/hi';
-import { MdMyLocation } from 'react-icons/md';
+import { MdDashboard, MdMyLocation } from 'react-icons/md';
+import { GrInstall } from 'react-icons/gr';
 import brandLogo from '../../assert/images/Cannabis_Connector_1-removebg-preview 1.png'
+import { AiFillCarryOut, AiFillSetting } from 'react-icons/ai';
 
 const IndexMin = () => {
   const [user, loading, error] = useAuthState(auth);
@@ -59,9 +61,9 @@ const IndexMin = () => {
               </div>
               {/* <!-- Sidebar content here --> */}
 
-              <li className='py-[0px] text-lg hover:text-black rounded'><CustomLink className='flex gap-4 capitalize' to={'/dashboard'}>Dashboard</CustomLink></li>
-              <li className='py-[0px] text-lg hover:text-black rounded'><CustomLink className='flex gap-4 capitalize' to={'/'}>All Auction</CustomLink></li>
-              <li className='py-[0px] text-lg hover:text-black rounded'><CustomLink className='flex gap-4 capitalize' to={'/setting'}>Setting</CustomLink></li>
+              <li className='py-[0px] text-lg hover:text-black rounded'><CustomLink className='flex gap-4 capitalize items-center' to={'/dashboard'}> <span><MdDashboard/></span> Dashboard</CustomLink></li>
+              <li className='py-[0px] text-lg hover:text-black rounded'><CustomLink className='flex gap-4 capitalize items-center' to={'/'}> <span><AiFillCarryOut/></span> All Auction</CustomLink></li>
+              <li className='py-[0px] text-lg hover:text-black rounded'><CustomLink className='flex gap-4 capitalize items-center' to={'/setting'}> <span><AiFillSetting/></span> Setting</CustomLink></li>
             </ul>
           </div>
         </div>
