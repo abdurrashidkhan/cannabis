@@ -1,9 +1,18 @@
 import React from 'react';
+import { MdMyLocation } from 'react-icons/md';
+import FlitterInfo from './FlitterInfo';
+import ProductsInfo from './ProductsInfo';
 
 const Overview = () => {
   return (
     <div>
-      <h1>This</h1>
+      <div className="">
+        {/* 2-coll */}
+        <div className="flex gap-4 pt-8 ">
+          <FlitterInfo />
+          <ProductsInfo />
+        </div>
+      </div>
     </div>
   );
 };

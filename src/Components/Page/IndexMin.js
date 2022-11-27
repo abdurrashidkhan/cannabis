@@ -7,6 +7,7 @@ import { signOut } from 'firebase/auth';
 import CustomLink from './CustomLink/CustomLink';
 import Navbar from './Navbar/Navbar';
 import { HiOutlineMenuAlt2 } from 'react-icons/hi';
+import { MdMyLocation } from 'react-icons/md';
 import brandLogo from '../../assert/images/Cannabis_Connector_1-removebg-preview 1.png'
 
 const IndexMin = () => {
@@ -40,10 +41,6 @@ const IndexMin = () => {
                   <h1 className='text-slate-700 text-2xl font-serif font-semibold'>Auction</h1>
                   <p className='pt-2 font-semibold text-slate-600'>Explore and bid on your desired product based on several filters.</p>
                 </div>
-                {/* 2-coll */}
-                <div className="">
-                
-                </div>
               </div>
               <div className="text-left px-3">
                 <Outlet></Outlet>
@@ -53,7 +50,7 @@ const IndexMin = () => {
           </div>
           <div className="drawer-side ">
             <label htmlFor="open-dashboard-menu" className="drawer-overlay "></label>
-            <ul className="menu p-4 overflow-y-auto w-80 bg-[#ffffff] border-r border-[#00000018] shadow-2xl  text-slate-600 font-semibold" id='slideBar'>
+            <ul className="menu p-4 overflow-y-auto w-[260px] bg-[#ffffff] border-r border-[#00000018] shadow-2xl  text-slate-600 font-semibold" id='slideBar'>
               <div className="profile text-center py-8">
                 <div className="">
                   <img className='w-[150px] h-[120px] m-auto' src={brandLogo} alt="brand logo" />

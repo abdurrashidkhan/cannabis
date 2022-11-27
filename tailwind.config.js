@@ -5,11 +5,15 @@ module.exports = {
   daisyui: {
     themes: [
       {
+        mytheme: {
+          "primary": "#23be2a",
+        },
         light: {
           ...require("daisyui/src/colors/themes")["[data-theme=light]"],
           primary: "blue",
           "primary-focus": "mediumblue",
         },
+
       },
     ],
   },
