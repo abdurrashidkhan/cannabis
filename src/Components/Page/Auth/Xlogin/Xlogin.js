@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import Swal from "sweetalert2";
-import googleIcon from '../../../assets/img/google.png'
 import { useSignInWithFacebook, useSignInWithGoogle } from "react-firebase-hooks/auth";
-import auth from "../../../firebase.init";
+import googleIcon from '../../../../assert/google.png'
 import UseToken from "../../Hook/UseToken/UseToken";
 import Loading from "../../Loading/Loading";
+import auth from "../../../../firebase.init";
+
 
 
 const LoginWithOther = () => {

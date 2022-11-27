@@ -8,7 +8,7 @@ import Swal from "sweetalert2";
 
 import "./signUp.css";
 import { useForm } from "react-hook-form";
-import auth from "../../../firebase.init";
+import auth from "../../../../firebase.init";
 import UseToken from "../../Hook/UseToken/UseToken";
 import Loading from "../../Loading/Loading";
 import LoginWithOther from "../Xlogin/Xlogin";

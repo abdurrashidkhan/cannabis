@@ -4,7 +4,7 @@ import { useAuthState, useSignInWithEmailAndPassword } from "react-firebase-hook
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Login.css";
 import Swal from "sweetalert2";
-import auth from "../../../firebase.init";
+import auth from "../../../../firebase.init";
 import UseToken from "../../Hook/UseToken/UseToken";
 import Loading from "../../Loading/Loading";
 import LoginWithOther from "../Xlogin/Xlogin";

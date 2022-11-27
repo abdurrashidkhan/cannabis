@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 // for hero icon 
-import { HomeIcon, MenuIcon, PuzzleIcon, ViewGridAddIcon } from '@heroicons/react/solid'
 import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
+import Loading from './Loading/Loading';
+import { signOut } from 'firebase/auth';
+import CustomLink from './CustomLink/CustomLink';
 
 const IndexMin = () => {
   const [user, loading, error] = useAuthState(auth);
@@ -24,7 +27,7 @@ const IndexMin = () => {
             {/* <!-- Page content here --> */}
             <div className="text-left mt-4 fixed" style={{ zIndex: '1111111' }}>
               <label htmlFor="open-dashboard-menu" className="w-10 rounded h-10 inline-block cursor-pointer bg-blue-500 hover:bg-blue-800 text-white lg:hidden"><span>
-                <MenuIcon />
+                <h1>Open</h1>
               </span> </label>
             </div>
             <div className="text-center ">
@@ -66,9 +69,9 @@ const IndexMin = () => {
               </div>
               {/* <!-- Sidebar content here --> */}
 
-              <li className='py-1 text-lg hover:text-black rounded'><CustomLink className='flex gap-4 capitalize' to={'/'}><HomeIcon className='text-slate-600 w-6 '></HomeIcon>Overview</CustomLink></li>
-              <li className='py-1 text-lg hover:text-black rounded'><CustomLink className='flex gap-4 capitalize' to={'/add-news'}><ViewGridAddIcon className='text-slate-600 w-6' /> Add News</CustomLink></li>
-              <li className='py-1 text-lg hover:text-black rounded'><CustomLink className='flex gap-4 capitalize' to={'/manage-news'}><PuzzleIcon className='text-slate-600 w-6' /> Manage News</CustomLink></li>
+              <li className='py-1 text-lg hover:text-black rounded'><CustomLink className='flex gap-4 capitalize' to={'/'}>Overview</CustomLink></li>
+              <li className='py-1 text-lg hover:text-black rounded'><CustomLink className='flex gap-4 capitalize' to={'/add-news'}>Add News</CustomLink></li>
+              <li className='py-1 text-lg hover:text-black rounded'><CustomLink className='flex gap-4 capitalize' to={'/manage-news'}>Manage News</CustomLink></li>
             </ul>
           </div>
         </div>

@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { signOut } from 'firebase/auth';
-import auth from '../../firebase.init';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
 import Loading from '../Loading/Loading';
+
 
 
 const Navbar = () => {

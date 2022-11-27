@@ -1,10 +1,9 @@
 import React from 'react';
+import IndexMin from '../IndexMin';
 
 const Home = () => {
   return (
-    <div>
-      <h1>This Is Home Page</h1>
-    </div>
+    <IndexMin></IndexMin>
   );
 };
 
