@@ -108,6 +108,7 @@ const FlitterInfo = () => {
           </div>
         </div>
       </div>
+
     </div>
   );
 };
