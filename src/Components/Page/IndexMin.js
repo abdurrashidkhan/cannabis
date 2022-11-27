@@ -59,9 +59,9 @@ const IndexMin = () => {
               </div>
               {/* <!-- Sidebar content here --> */}
 
-              <li className='py-[0px] text-lg hover:text-black rounded'><CustomLink className='flex gap-4 capitalize' to={'/'}>Dashboard</CustomLink></li>
-              <li className='py-[0px] text-lg hover:text-black rounded'><CustomLink className='flex gap-4 capitalize' to={'/add-news'}>Add News</CustomLink></li>
-              <li className='py-[0px] text-lg hover:text-black rounded'><CustomLink className='flex gap-4 capitalize' to={'/manage-news'}>Manage News</CustomLink></li>
+              <li className='py-[0px] text-lg hover:text-black rounded'><CustomLink className='flex gap-4 capitalize' to={'/dashboard'}>Dashboard</CustomLink></li>
+              <li className='py-[0px] text-lg hover:text-black rounded'><CustomLink className='flex gap-4 capitalize' to={'/'}>All Auction</CustomLink></li>
+              <li className='py-[0px] text-lg hover:text-black rounded'><CustomLink className='flex gap-4 capitalize' to={'/setting'}>Setting</CustomLink></li>
             </ul>
           </div>
         </div>

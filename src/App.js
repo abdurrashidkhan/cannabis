@@ -7,6 +7,8 @@ import SignUp from './Components/Page/Auth/CreateAccout/NewAccount';
 import IndexMin from './Components/Page/IndexMin';
 import Overview from './Components/Page/Overview/Overview';
 import Navbar from './Components/Page/Navbar/Navbar';
+import Setting from './Components/Page/Setting/Setting';
+import Dashboard from './Components/Page/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -17,12 +19,12 @@ function App() {
           <Route index element={
             <Overview></Overview>
           }></Route>
-          {/* <Route path='add-news' element={
-          <AddNews></AddNews>
+          <Route path='/setting' element={
+          <Setting></Setting>
         }></Route>
-        <Route path='manage-news' element={
-          <ManageNews></ManageNews>
-        }></Route> */}
+        <Route path='/dashboard' element={
+          <Dashboard></Dashboard>
+        }></Route>
 
         </Route>
         <Route path='/login' element={
