@@ -66,7 +66,7 @@ const IndexMin = () => {
               </div>
               {/* <!-- Sidebar content here --> */}
 
-              <li className='py-[0px] text-lg hover:hover:bg-[#00000015] rounded'><CustomLink className='flex gap-4 capitalize items-center' to={'/dashboard'}> <span><MdDashboard /></span> Dashboard</CustomLink></li>
+              <li className='py-[0px] text-lg hover:hover:bg-[#00000015] rounded'><CustomLink className='flex gap-4 capitalize items-center w-[100%]' to={'/dashboard'}> <span><MdDashboard /></span> Dashboard</CustomLink></li>
 
               <div className="collapse collapse-arrow py-[0px] text-lg border rounded">
                 <input type="checkbox" className="peer" />
@@ -81,10 +81,10 @@ const IndexMin = () => {
                   <CustomLink className='flex gap-4 capitalize items-center ml-4 px-[5px] py-[8px] text-lg hover:bg-[#00000015] rounded' to={'/proposals'}> <span><MdBookmarkBorder /></span>My Proposals</CustomLink>
                 </div>
               </div>
-              <li className='py-[0px] text-lg hover:bg-[#00000015] rounded'><CustomLink className='flex gap-4 capitalize items-center' to={'/marketplace'}> <img className="w-[15px] h-[15px]" src={vector2} alt=''></img> Marketplace</CustomLink></li>
-              <li className='py-[0px] text-lg hover:bg-[#00000015] rounded'><CustomLink className='flex gap-4 capitalize items-center' to={'/order'}> <img className="w-[15px] h-[15px]" src={vector3} alt=''></img> Order</CustomLink></li>
-              <li className='py-[0px] text-lg hover:bg-[#00000015] rounded'><CustomLink className='flex gap-4 capitalize items-center' to={'/event'}> <span><MdEvent /></span> Event</CustomLink></li>
-              <li className='py-[0px] text-lg hover:bg-[#00000015] rounded'><CustomLink className='flex gap-4 capitalize items-center' to={'/setting'}> <span><AiFillSetting /></span> Setting</CustomLink></li>
+              <li className='py-[0px] text-lg hover:bg-[#00000015] rounded'><CustomLink className='flex gap-4 capitalize items-center w-[100%]' to={'/marketplace'}> <img className="w-[15px] h-[15px]" src={vector2} alt=''></img> Marketplace</CustomLink></li>
+              <li className='py-[0px] text-lg hover:bg-[#00000015] rounded'><CustomLink className='flex gap-4 capitalize items-center w-[100%]' to={'/order'}> <img className="w-[15px] h-[15px]" src={vector3} alt=''></img> Order</CustomLink></li>
+              <li className='py-[0px] text-lg hover:bg-[#00000015] rounded'><CustomLink className='flex gap-4 capitalize items-center w-[100%]' to={'/event'}> <span><MdEvent /></span> Event</CustomLink></li>
+              <li className='py-[0px] text-lg hover:bg-[#00000015] rounded'><CustomLink className='flex gap-4 capitalize items-center w-[100%]' to={'/setting'}> <span><AiFillSetting /></span> Setting</CustomLink></li>
             </ul>
           </div>
         </div>
