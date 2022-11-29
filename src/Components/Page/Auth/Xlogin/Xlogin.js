@@ -61,10 +61,10 @@ const LoginWithOther = () => {
         <div className="divider">OR</div>
       </div>
       <div className="flex items-center justify-center justify-items-center gap-4">
-        <div className="google hover:bg-slate-400 hover:text-white rounded border bg-slate-300 w-full">
-          <button onClick={loginWithGoogle}>
-            <span className="flex items-center pt-2 text-center ">
-              <img style={{ width: '45px', height: '45px' }} src={googleIcon} alt="google icon" />
+        <div className="google hover:bg-[#0000001a] text-center hover:text-white rounded border bg-slate-300 w-full">
+          <button onClick={loginWithGoogle} className='w-[100%]'>
+            <span className="flex items-center pt-2 text-center justify-center">
+              <img style={{ width: '40px', height: '40px' }} src={googleIcon} alt="google icon" />
               <span className="capitalize text-slate-800 font-serif font-semibold">login with google</span>
             </span>
           </button>
