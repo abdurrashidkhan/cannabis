@@ -7,11 +7,13 @@ import { signOut } from 'firebase/auth';
 import CustomLink from './CustomLink/CustomLink';
 import Navbar from './Navbar/Navbar';
 import { HiOutlineMenuAlt2 } from 'react-icons/hi';
-import { MdDashboard, MdMyLocation } from 'react-icons/md';
+import { MdBookmarkBorder, MdDashboard, MdEvent, MdMyLocation } from 'react-icons/md';
 import { GrInstall } from 'react-icons/gr';
 import brandLogo from '../../assert/images/Cannabis_Connector_1-removebg-preview 1.png'
-import { AiFillCarryOut, AiFillSetting } from 'react-icons/ai';
+import { AiFillCarryOut, AiFillSetting } from 'react-icons/ai'
 import hummnerIcon from '../../../src/assert/images/icon.png';
+import vector2 from '../../../src/assert/images/Vector (2).png';
+import vector3 from '../../../src/assert/images/Vector3.png';
 
 
 const IndexMin = () => {
@@ -36,7 +38,7 @@ const IndexMin = () => {
             <Navbar></Navbar>
             {/* <!-- Page content here --> */}
             <div className="text-left mt-12 fixed" style={{ zIndex: '1111111' }}>
-              <label htmlFor="open-dashboard-menu" className="w-10 rounded h-10 inline-block cursor-pointer bg-blue-500 hover:bg-blue-800 text-white lg:hidden"><span>
+              <label htmlFor="open-dashboard-menu" className="w-10 rounded h-10 inline-block cursor-pointer bg-[#23be2a] hover:bg-[#23be2a] text-white lg:hidden"><span>
                 <HiOutlineMenuAlt2 className='w-10 h-10' />
               </span> </label>
             </div>
@@ -70,15 +72,18 @@ const IndexMin = () => {
                 <input type="checkbox" className="peer" />
                 <div className="collapse-title">
                   <div className="flex items-center gap-3">
-                    <img src={hummnerIcon} alt="" />
+                    <img className="w-[19px] h-[21px]" src={hummnerIcon} alt="" />
                     <p>Auction</p>
                   </div>
                 </div>
                 <div className="collapse-content">
                   <CustomLink className='flex gap-4 capitalize items-center ml-4 px-[5px] py-[8px] text-lg hover:bg-[#00000015] rounded' to={'/'}> <span><AiFillCarryOut /></span> All Auction</CustomLink>
-                  <CustomLink className='flex gap-4 capitalize items-center ml-4 px-[5px] py-[8px] text-lg hover:bg-[#00000015] rounded' to={'/proposals'}> <span><AiFillCarryOut /></span>My Proposals</CustomLink>
+                  <CustomLink className='flex gap-4 capitalize items-center ml-4 px-[5px] py-[8px] text-lg hover:bg-[#00000015] rounded' to={'/proposals'}> <span><MdBookmarkBorder /></span>My Proposals</CustomLink>
                 </div>
               </div>
+              <li className='py-[0px] text-lg hover:bg-[#00000015] rounded'><CustomLink className='flex gap-4 capitalize items-center' to={'/marketplace'}> <img className="w-[15px] h-[15px]" src={vector2} alt=''></img> Marketplace</CustomLink></li>
+              <li className='py-[0px] text-lg hover:bg-[#00000015] rounded'><CustomLink className='flex gap-4 capitalize items-center' to={'/order'}> <img className="w-[15px] h-[15px]" src={vector3} alt=''></img> Order</CustomLink></li>
+              <li className='py-[0px] text-lg hover:bg-[#00000015] rounded'><CustomLink className='flex gap-4 capitalize items-center' to={'/event'}> <span><MdEvent /></span> Event</CustomLink></li>
               <li className='py-[0px] text-lg hover:bg-[#00000015] rounded'><CustomLink className='flex gap-4 capitalize items-center' to={'/setting'}> <span><AiFillSetting /></span> Setting</CustomLink></li>
             </ul>
           </div>
