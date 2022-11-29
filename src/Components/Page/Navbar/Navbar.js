@@ -10,6 +10,7 @@ import { AiOutlineBell } from 'react-icons/ai';
 
 const Navbar = () => {
 	const [user, loading, error] = useAuthState(auth);
+	console.log(user);
 	const logOut = () => {
 		signOut(auth);
 	};
@@ -62,7 +63,10 @@ const Navbar = () => {
 					<div className="dropdown dropdown-end">
 						<label tabIndex={0} className="btn btn-ghost btn-circle avatar">
 							<div className="w-10 rounded-full">
-								<img src="https://placeimg.com/80/80/people" alt='' />
+								{/* <img src="https://placeimg.com/80/80/people" alt='' /> */}
+								{
+									user?.photoURL ? <img src={user.photoURL} alt='' /> : <img src="https://i.ibb.co/Ct43kdn/image-removebg-preview-6.png" alt='' />
+								}
 							</div>
 						</label>
 						<ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded w-52">
@@ -73,7 +77,10 @@ const Navbar = () => {
 								</p>
 							</li>
 							<li className='hover:bg-[#0000001c]'><button>Settings</button></li>
-							<li className='hover:bg-[#0000001c]'><button onClick={logOut}>Logout</button></li>
+							{
+								user ? <li className='hover:bg-[#0000001c]'><button onClick={logOut}>Logout</button></li> : <li className='hover:bg-[#0000001c]'><Link to='/login' >Login</Link></li>
+							}
+							
 						</ul>
 					</div>
 				</div>
