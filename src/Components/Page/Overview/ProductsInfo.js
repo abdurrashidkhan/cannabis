@@ -11,11 +11,11 @@ import { FaCrown } from 'react-icons/fa';
 
 const ProductsInfo = () => {
   return (
-    <div className="bg-[#fff] px-4 rounded shadow-2xl py-4 w-[100%]">
-      <div className="overflow-x-auto w-full">
+    <div className="w-[100%] ">
+      <div className="overflow-auto w-full">
         <table className="table w-full">
           <tbody>
-            <tr className='border-b border-[#9c9c9c]'>
+            <tr className='border-b-[5px] border-[#e2e2e2]  '>
               <td>
                 <div className="flex items-center space-x-3">
                   <div className="">
@@ -57,7 +57,7 @@ const ProductsInfo = () => {
               </th>
               <hr className='w-full h-[3px] bg-[#aaaaaa8c]' />
             </tr>
-            <tr className='border-b border-[#9c9c9c]'>
+            <tr className='border-b-[5px] border-[#e2e2e2]'>
               <td>
                 <div className="flex items-center space-x-3">
                   <div className="">
@@ -99,7 +99,7 @@ const ProductsInfo = () => {
               </th>
               <hr className='w-full h-[3px] bg-[#aaaaaa8c]' />
             </tr>
-            <tr className='border-b border-[#9c9c9c]'>
+            <tr className='border-b-[5px] border-[#e2e2e2]'>
               <td>
                 <div className="flex items-center space-x-3">
                   <div className="">
@@ -141,7 +141,7 @@ const ProductsInfo = () => {
               </th>
               <hr className='w-full h-[3px] bg-[#aaaaaa8c]' />
             </tr>
-            <tr className='border-b border-[#9c9c9c]'>
+            <tr className='border-b-[5px] border-[#e2e2e2]'>
               <td>
                 <div className="flex items-center space-x-3">
                   <div className="">
@@ -183,7 +183,7 @@ const ProductsInfo = () => {
               </th>
               <hr className='w-full h-[3px] bg-[#aaaaaa8c]' />
             </tr>
-            <tr className='border-b border-[#9c9c9c]'>
+            <tr className='border-b-[5px] border-[#e2e2e2]'>
               <td>
                 <div className="flex items-center space-x-3">
                   <div className="">
@@ -225,7 +225,7 @@ const ProductsInfo = () => {
               </th>
               <hr className='w-full h-[3px] bg-[#aaaaaa8c]' />
             </tr>
-            <tr className='border-b border-[#9c9c9c]'>
+            <tr className='border-b-[5px] border-[#e2e2e2]'>
               <td>
                 <div className="flex items-center space-x-3">
                   <div className="">
@@ -267,19 +267,17 @@ const ProductsInfo = () => {
               </th>
               <hr className='w-full h-[3px] bg-[#aaaaaa8c]' />
             </tr>
-
           </tbody>
-
         </table>
-        <div className="text-center mt-8">
-          <div className="btn-group gap-2">
-            <button className="text-slate-400 btn  btn-sm hover:bg-slate-500 hover:border-none  "> &#60; </button>
-            <button className="text-slate-400 btn  btn-sm hover:bg-slate-500 hover:border-none  ">1</button>
-            <button className="text-slate-400 btn  btn-sm hover:bg-slate-500 hover:border-none  btn-active">2</button>
-            <button className="text-slate-400 btn  btn-sm hover:bg-slate-500 hover:border-none  ">3</button>
-            <button className="text-slate-400 btn  btn-sm hover:bg-slate-500 hover:border-none  ">4</button>
-            <button className="text-slate-400 btn  btn-sm hover:bg-slate-500 hover:border-none  ">&#62;</button>
-          </div>
+      </div>
+      <div className="text-center mt-8">
+        <div className="btn-group gap-2">
+          <button className="text-slate-400 btn  btn-sm hover:bg-slate-500 hover:border-none  "> &#60; </button>
+          <button className="text-slate-400 btn  btn-sm hover:bg-slate-500 hover:border-none  ">1</button>
+          <button className="text-slate-400 btn  btn-sm hover:bg-slate-500 hover:border-none  btn-active">2</button>
+          <button className="text-slate-400 btn  btn-sm hover:bg-slate-500 hover:border-none  ">3</button>
+          <button className="text-slate-400 btn  btn-sm hover:bg-slate-500 hover:border-none  ">4</button>
+          <button className="text-slate-400 btn  btn-sm hover:bg-slate-500 hover:border-none  ">&#62;</button>
         </div>
       </div>
     </div>

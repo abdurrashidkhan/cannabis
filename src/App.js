@@ -9,6 +9,7 @@ import Overview from './Components/Page/Overview/Overview';
 import Navbar from './Components/Page/Navbar/Navbar';
 import Setting from './Components/Page/Setting/Setting';
 import Dashboard from './Components/Page/Dashboard/Dashboard';
+import NotFound from './Components/Page/404/NotFound';
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
         }></Route>
         <Route path='/signup' element={
           <SignUp></SignUp>
+        }></Route>
+        <Route path='*' element={
+          <NotFound></NotFound>
         }></Route>
       </Routes></>
   );
