@@ -29,7 +29,7 @@ const Navbar = () => {
 					<div className="dropdown dropdown-end">
 						<label tabIndex={0} className="btn btn-ghost btn-circle">
 							<div className="indicator">
-								<AiOutlineBell className='text-2xl'/>
+								<AiOutlineBell className='text-2xl' />
 								<span className="badge badge-sm indicator-item">8</span>
 							</div>
 						</label>
@@ -37,7 +37,7 @@ const Navbar = () => {
 					<div className="dropdown dropdown-end">
 						<label tabIndex={0} className="btn btn-ghost btn-circle">
 							<div className="indicator">
-							<BiMessageRoundedDots className='text-2xl'/>
+								<BiMessageRoundedDots className='text-2xl' />
 								<span className="badge badge-sm indicator-item">2</span>
 							</div>
 						</label>
@@ -62,18 +62,18 @@ const Navbar = () => {
 					<div className="dropdown dropdown-end">
 						<label tabIndex={0} className="btn btn-ghost btn-circle avatar">
 							<div className="w-10 rounded-full">
-								<img src="https://placeimg.com/80/80/people" alt=''/>
+								<img src="https://placeimg.com/80/80/people" alt='' />
 							</div>
 						</label>
-						<ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-							<li>
+						<ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded w-52">
+							<li className='hover:bg-[#0000001c]'>
 								<p className="justify-between">
 									Profile
 									<span className="badge">New</span>
 								</p>
 							</li>
-							<li><button>Settings</button></li>
-							<li><button>Logout</button></li>
+							<li className='hover:bg-[#0000001c]'><button>Settings</button></li>
+							<li className='hover:bg-[#0000001c]'><button onClick={logOut}>Logout</button></li>
 						</ul>
 					</div>
 				</div>
