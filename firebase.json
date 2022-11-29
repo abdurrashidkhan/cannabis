@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site": "cannabis1050",
     "public": "build",
     "ignore": [
       "firebase.json",
